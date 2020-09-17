@@ -1,0 +1,30 @@
+
+<html>
+<body>
+<div class="form-group" >
+    <label for="country">* What country are you in ?</label>
+    <select name="country" id="country" onchange="selectCountryCode();" class="form-control"> 
+        <option value="11" id="d">United Kingdom</option>
+        <option value="12">Greece</option>
+        <option value="13">Gemany</option>
+       
+    </select>
+</div>
+
+<div class="form-group">
+    <label for="phone">* What’s your phone number ?</label>
+    <input type="text" name="phone" id="phone" value="" class="form-control" />
+</div>
+
+<script>
+function selectCountryCode(){
+  var mySelect   = document.getElementById("country");
+  var myInput    = document.getElementById("phone");
+
+  myInput.value = mySelect.options[mySelect.selectedIndex].i;
+
+
+}
+</script>
+</body>
+</html>
